@@ -1,0 +1,22 @@
+package lesson_02.homework_03;
+
+import java.util.Scanner;
+
+public class Application_04 {
+//Написать программу, которая будет проверять число, которое мы подадим ей.
+//Если число положительное, то увеличить его в два раза.
+//Если число отрицательное, то прибавить единицу.
+//Если введенное число равно нулю, необходимо вывести ноль.
+//Вывести результат в консоль.
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        if (number > 0) {
+            System.out.println(number * 2);
+        } else if (number < 0) {
+            System.out.println(number + 1);
+        }else {
+            System.out.println(0);
+        }
+    }
+}
