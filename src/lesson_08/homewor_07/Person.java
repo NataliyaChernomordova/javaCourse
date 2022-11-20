@@ -32,6 +32,6 @@ public class Person {
     }
 
     Person person = new Person();
-    Person gosha = new Person(18);
+    Person person1 = new Person(18);
 
 }
