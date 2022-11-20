@@ -2,10 +2,11 @@ package lesson_08.homework_08;
 
 public class Goods {
     private String nameGoods;
-    private int price;
+    private String price;
     private String top;
 
-    public Goods() {
+
+    public Goods(String nameGoods, String price, String top) {
         this.nameGoods = nameGoods;
         this.price = price;
         this.top = top;
@@ -19,12 +20,12 @@ public class Goods {
         this.nameGoods = nameGoods;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
     public void setPrice(int price) {
-        this.price = price;
+        this.price = String.valueOf(price);
     }
 
     public String getTop() {
