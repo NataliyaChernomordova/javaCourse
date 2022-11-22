@@ -12,10 +12,22 @@ public class PlayerImpl implements Player {
     // Поля
     Card [] cardsOnHand = new Card [100];
     boolean inGame;
-
+    String name = new String();
     //Конструктор
 
+
+    public PlayerImpl(String name) {
+        this.name = name;
+    }
     // Методы
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public void takeCard(Card card) {
         for (int i = 0; i < cardsOnHand.length; i++) {

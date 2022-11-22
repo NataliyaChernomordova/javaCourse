@@ -7,8 +7,6 @@ public class Basket extends Goods {
         super(nameGoods, price, top);
     }
 
-    String boughtGoods() {
-        return boughtGoods();
-    }
+
 
 }
