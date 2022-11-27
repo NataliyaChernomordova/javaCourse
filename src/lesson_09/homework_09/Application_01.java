@@ -1,4 +1,4 @@
-package lesson_09.homework;
+package lesson_09.homework_09;
 
 import java.util.ArrayList;
 //1. Создай список строк.

@@ -3,7 +3,6 @@ package lesson_09;
 import lesson_08.models.CardImpl;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.TreeSet;
 
 public class Main {
@@ -33,7 +32,7 @@ public class Main {
 
         // 3. метод set() - затирает значение по определенному индексу
 
-        list.set(3,99);
+//        list.set(3,99);
 
         // 4. метод size() -  возвращает размер коллекции
 
