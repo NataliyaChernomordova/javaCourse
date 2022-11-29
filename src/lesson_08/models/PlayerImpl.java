@@ -12,6 +12,7 @@ public class PlayerImpl implements Player {
     // Поля
     Card [] cardsOnHand = new Card [100];
     boolean inGame;
+    boolean isCroupier;
     String name = new String();
     //Конструктор
 
@@ -83,5 +84,9 @@ public class PlayerImpl implements Player {
 
     public void setInGame(boolean inGame) {
         this.inGame = inGame;
+    }
+
+    public void setCroupier(boolean croupier) {
+        isCroupier = croupier;
     }
 }

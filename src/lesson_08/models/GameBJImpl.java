@@ -1,7 +1,6 @@
 package lesson_08.models;
 
 import lesson_08.interfaces.GameBJ;
-import lesson_08.interfaces.Player;
 
 public class GameBJImpl implements GameBJ {
     PlayerImpl [] playersIntGame = new PlayerImpl[3];
@@ -24,6 +23,7 @@ public class GameBJImpl implements GameBJ {
     public void giveTwoCardsOnHand() {
         for (int i = 0; i < playersIntGame.length; i++) {
             if (playersIntGame[i] != null){
+                playersIntGame[i].takeCard(deckOfCards.randomCards());
                 playersIntGame[i].takeCard(deckOfCards.randomCards());
             }
 
@@ -74,7 +74,7 @@ public class GameBJImpl implements GameBJ {
             }
         }
         for (PlayerImpl player: playersIntGame) {
-            if (player != null && !player.isCroupier()){
+            if (player != null && player.isInGame()){
                 System.out.println("Победил игрок :");
                 player.showCardsOnHand();
                 if (bestValue < player.countValuesOfAllCardsOnHand()) {
@@ -92,5 +92,6 @@ public class GameBJImpl implements GameBJ {
             }
         }
         return countPlayers;
+
     }
 }
