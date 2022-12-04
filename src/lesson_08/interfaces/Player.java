@@ -5,6 +5,13 @@ public interface Player {
     int countValuesOfAllCardsOnHand();
     boolean needCard();
     void showCardsOnHand();
+
+    //
     boolean isCroupier();
+
+
+//    boolean isInGame();
+//    void setInGame (boolean inGame);
+
 
 }

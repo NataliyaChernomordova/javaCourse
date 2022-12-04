@@ -1,8 +1,9 @@
 package lesson_09.hash_code;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Coin extends Object{
+public class Coin implements Comparator<Coin> {
     // Поля
     private int nominal;
     private double diameter;
@@ -62,6 +63,25 @@ public class Coin extends Object{
                 ", country='" + country + '\'' +
                 ", year=" + year +
                 '}';
+    }
+
+//    @Override
+//    public int compare(Coin o) {
+//        if (this.getYear() != o.getYear()){
+//            return this.getYear() - o.getYear();
+//        }
+//        if (this.getNominal() != o.getNominal()){
+//            return this.getNominal() - o.getNominal();
+//        }
+//        if (this.getDiameter() != o.getDiameter()){
+//            return Double.compare(this.getDiameter(), o.getDiameter());
+//        }
+//        return this.getCountry().compareTo(o.getCountry());
+//    }
+
+    @Override
+    public int compare(Coin o1, Coin o2) {
+        return 0;
     }
 
     @Override

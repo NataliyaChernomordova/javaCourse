@@ -15,9 +15,14 @@ public class CardImpl implements Card{
     public void printCard() {
         System.out.println(nameCard);
     }
-
+//
     @Override
     public int getValue() {
         return value;
     }
+//
+//    @Override
+//    public String getNameCard() {
+//        return nameCard;
+//    }
 }

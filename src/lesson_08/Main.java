@@ -40,6 +40,5 @@ public class Main {
         // 9. Определить победителя
         gameBJ.printWinner();
 
-
     }
 }

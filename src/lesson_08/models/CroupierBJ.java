@@ -9,6 +9,12 @@ public class CroupierBJ extends PlayerImpl {
     public boolean needCard() {
         return countValuesOfAllCardsOnHand() <= 17;
     }
+
+    @Override
+    public void setInGame(boolean inGame) {
+        super.setInGame(inGame);
+    }
+
 }
 
 
