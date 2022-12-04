@@ -1,9 +1,8 @@
-package lesson_09.hash_code;
+package lesson_09_10.hash_code;
 
-import java.util.Comparator;
 import java.util.Objects;
 
-public class Coin implements Comparator<Coin> {
+public class Coin implements Comparable<Coin> {
     // Поля
     private int nominal;
     private double diameter;
@@ -24,34 +23,42 @@ public class Coin implements Comparator<Coin> {
 
 
     public int getNominal() {
+
         return nominal;
     }
 
     public void setNominal(int nominal) {
+
         this.nominal = nominal;
     }
 
     public double getDiameter() {
+
         return diameter;
     }
 
     public void setDiameter(double diameter) {
+
         this.diameter = diameter;
     }
 
     public String getCountry() {
+
         return country;
     }
 
     public void setCountry(String country) {
+
         this.country = country;
     }
 
     public int getYear() {
+
         return year;
     }
 
     public void setYear(int year) {
+
         this.year = year;
     }
 
@@ -63,25 +70,6 @@ public class Coin implements Comparator<Coin> {
                 ", country='" + country + '\'' +
                 ", year=" + year +
                 '}';
-    }
-
-//    @Override
-//    public int compare(Coin o) {
-//        if (this.getYear() != o.getYear()){
-//            return this.getYear() - o.getYear();
-//        }
-//        if (this.getNominal() != o.getNominal()){
-//            return this.getNominal() - o.getNominal();
-//        }
-//        if (this.getDiameter() != o.getDiameter()){
-//            return Double.compare(this.getDiameter(), o.getDiameter());
-//        }
-//        return this.getCountry().compareTo(o.getCountry());
-//    }
-
-    @Override
-    public int compare(Coin o1, Coin o2) {
-        return 0;
     }
 
     @Override
@@ -107,5 +95,18 @@ public class Coin implements Comparator<Coin> {
         result = 31 * result + (country != null ? country.hashCode() : 0);
         result = 31 * result + year;
         return result;
+    }
+    @Override
+    public int compareTo(Coin o) {
+        if (this.getYear() != o.getYear()){
+            return this.getYear() - o.getYear();
+        }
+        if (this.getNominal() != o.getNominal()){
+            return this.getNominal() - o.getNominal();
+        }
+        if (this.getDiameter() != o.getDiameter()){
+            return Double.compare(this.getDiameter(), o.getDiameter());
+        }
+        return this.getCountry().compareTo(o.getCountry());
     }
 }

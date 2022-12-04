@@ -1,4 +1,4 @@
-package lesson_09.tern_operator;
+package lesson_09_10.tern_operator;
 
 public class People {
     private String name;

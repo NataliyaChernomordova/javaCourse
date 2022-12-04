@@ -1,4 +1,4 @@
-package lesson_09.hash_code;
+package lesson_09_10.hash_code;
 
 import java.util.HashSet;
 
@@ -39,8 +39,8 @@ public class Main {
 
         System.out.println();
 
-        double number = (double) 5 / 2;
-        System.out.println(number);
+//        double number = (double) 5 / 2;
+//        System.out.println(number);
 
     }
 }

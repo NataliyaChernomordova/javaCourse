@@ -1,4 +1,4 @@
-package lesson_09;
+package lesson_09_10;
 
 import lesson_08.models.CardImpl;
 
@@ -119,7 +119,8 @@ public class Main {
             System.out.println(i);
         }
 
-        TreeSet<Integer> treeSet = new TreeSet<>(new ReverseIntegers());
+        TreeSet<Integer> treeSet = new TreeSet<>() {
+        };
 
         treeSet.add(20);
         treeSet.add(30);
