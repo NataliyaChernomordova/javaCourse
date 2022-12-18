@@ -2,6 +2,7 @@ package lesson_12.additional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main3 {
     public static void main(String[] args) {
@@ -32,6 +33,13 @@ public class Main3 {
 
 //        System.out.println(Util.matchAllSpecialistAreDevops(specs));
 
+
+        String login = null;
+        if (login != null) {
+            System.out.println(login.length());
+        }
+        Scanner scanner = new Scanner(System.in);
+        login = scanner.nextLine();
 
         System.out.println(Util.matchAllSpecialistsSalaryMoreThan10000(specs));
 
